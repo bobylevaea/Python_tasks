@@ -11,3 +11,20 @@ progression = [a1 + (i * d) for i in range(n)]
 
 print(progression)
 
+# Задача 32: Определить индексы элементов массива (списка), 
+# значения которых принадлежат заданному диапазону (т.е. не меньше заданного 
+# минимума и не больше заданного максимума)
+
+from random import randint
+
+min_value = int(input("Введите минимальное значение: "))
+max_value = int(input("Введите максимальное значение: "))
+
+size = int(input("Введите размер массива: "))
+my_list = [randint(-10, 10) for i in range(size)]
+
+indices = [i for i in range(len(my_list)) if min_value <= my_list[i] <= max_value]
+
+print(f'Индексы элементов, удовлетворяющих диапазону: {indices}')
+
+
