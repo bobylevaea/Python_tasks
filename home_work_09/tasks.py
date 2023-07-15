@@ -3,7 +3,8 @@ import pandas as pd
   
 # Загрузка данных из файла 
 df = pd.read_csv('/content/sample_data/california_housing_train.csv') 
-  
+df.head(2)
+
 # Задача 40: Работать с файлом california_housing_train.csv, который находится в папке 
 # sample_data. Определить среднюю стоимость дома, где кол-во людей от 0 до 500 (population)
  
